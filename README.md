@@ -1,12 +1,12 @@
 # Portfolio Resume
 
-A single-page portfolio site for N Kiran — Data Analyst. Built as plain
+A single-page portfolio site for N Kishore — Data Analyst. Built as plain
 HTML/CSS/JS (no build step) so it deploys directly via GitHub Pages.
 
 It combines the editorial big-type look (outlined headline text, marquee
 ticker, grid background) with a warmer, playful accent system (glowing
 blobs, pill badges, timeline) into one original design, styled with a
-coral/violet/amber palette on a near-black background.
+navy/slate palette and a blue accent.
 
 ## Structure
 
