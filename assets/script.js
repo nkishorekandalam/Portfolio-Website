@@ -1,5 +1,16 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
+// light/dark theme toggle
+const themeToggle = document.getElementById("themeToggle");
+themeToggle.addEventListener("click", () => {
+  const current = document.documentElement.getAttribute("data-theme") || "dark";
+  const next = current === "light" ? "dark" : "light";
+  document.documentElement.setAttribute("data-theme", next);
+  try {
+    localStorage.setItem("theme", next);
+  } catch (e) {}
+});
+
 // tap-to-highlight the whole achievements list as one group on touch devices
 document.querySelectorAll(".timeline-list").forEach((list) => {
   list.querySelectorAll("li").forEach((item) => {
@@ -121,9 +132,9 @@ statEls.forEach((el) => statObserver.observe(el));
 // typewriter tagline
 const taglineEl = document.getElementById("typedTagline");
 const taglinePhrases = [
-  "Every dataset has a story. I help uncover it.",
-  "I ask the right questions before building dashboards and reports.",
-  "Complex problems deserve simple solutions.",
+  "I turn messy business data into decisions leadership can act on.",
+  "I find the business problem hiding in the data, then solve it.",
+  "Dashboards and automation that save teams hours every week.",
 ];
 
 function typeLoop() {
