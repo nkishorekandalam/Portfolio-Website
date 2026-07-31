@@ -1,5 +1,7 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
+window.scrollTo(0, 0);
+
 // light/dark theme toggle
 const themeToggle = document.getElementById("themeToggle");
 themeToggle.addEventListener("click", () => {

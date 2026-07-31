@@ -12,6 +12,9 @@
 <link rel="stylesheet" href="assets/style.css" />
 <script>
 (function () {
+  if ("scrollRestoration" in history) {
+    history.scrollRestoration = "manual";
+  }
   try {
     var saved = localStorage.getItem("theme");
     if (saved === "light" || saved === "dark") {
